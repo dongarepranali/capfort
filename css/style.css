@@ -158,13 +158,14 @@ footer {
 footer span {
   width: 50px;
   height: 50px;
-  font-size:20px;
+  font-size:17px !important;
   padding: 20px;
   border-radius: 100%;
   margin: 0 auto;
   margin-right: 10px;
   border: 0px solid rgb(9, 224, 196);
   box-shadow: 2px;
+  align-items: center;
 }
 footer span:hover {
   background-color: rgb(9, 224, 196);
@@ -177,7 +178,7 @@ footer span:hover {
       height: 192px !important;
   }
   .text h1{
-    font-size:35px;
+    font-size:30px;
     padding-bottom:10%;
     padding-top:20%;
   }
@@ -185,6 +186,12 @@ footer span:hover {
     width:100%;
     height:100px;
     align-items: center;
+  }
+  .textarea h1{
+    font-size:25px;
+  }
+  .textarea p{
+    font-size:13px;
   }
   .img{
     float:left;
@@ -196,7 +203,7 @@ footer span:hover {
     height:200px;
   }
   .background .box1 h3{
-      font-size: 20px;
+      font-size: 18px;
   }
   .background .box1 h3{
     position: relative;
@@ -206,6 +213,9 @@ footer span:hover {
     width:100%;
     height:200px;
   }
+  .background .box2 h1{
+    font-size:39px;
+  }
   .background .box2 h3{
     position: relative;
     top:25%;
@@ -214,7 +224,13 @@ footer span:hover {
     width:100%;
     margin:0 auto;  
   }
+  .two-person h2{
+    font-size:26px;
+  }
   .two-person p{
     padding-bottom:10px;
+  }
+  footer span{
+    font-size:15px;
   }
 }
