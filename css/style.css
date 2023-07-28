@@ -9,14 +9,17 @@
    background: #221D26;
  }
 
- 
- body::-webkit-scrollbar{
-  display:none;
+ html{
+  scroll-behavior:smooth !important;
  }
+ 
+ /* body::-webkit-scrollbar{
+  display:none;
+ } */
  /* .navigation{
    margin-bottom:0px !important;
  } */
- .logo{
+ /* .logo{
   color:#fff !important;
   font-size:20px;
   font-weight:600;
@@ -28,7 +31,7 @@
   font-size:17px;
   font-weight:600;
   color:#fff!important;
- }
+ } */
 
  .text h1{
   font-size: 45px;
@@ -45,7 +48,7 @@
   height:900px;
   margin:0 auto;
 } 
-video{
+.background video{
      width:100%;
      height:700px;
 }
@@ -68,9 +71,9 @@ video{
   width:60%;
   height:450px;
   border:2px solid rgb(9, 224, 196);  
-  margin-top: 20px;
   padding-left:30px;
   margin:0 auto;
+  margin-top: 28px;
 }
 .box1 h1{
     font-size:35px;
@@ -108,7 +111,7 @@ top:60%;
   margin:0 auto;
   padding:50px;
 }
-.me {
+.two-person .me {
   width: 150px;
   height: 50px;
   color: #fff;
@@ -120,7 +123,7 @@ top:60%;
   color: rgb(9, 224, 196);
   margin-right: 20px;
 }
-.in {
+.two-person .in {
   width: 50px;
   height: 50px;
   background-color: transparent;
@@ -130,11 +133,11 @@ top:60%;
   border-radius: 100%;
   border: 2px solid #fff;
 }
-.me:hover {
+.two-person .me:hover {
   background-color: rgb(9, 224, 196);
   color: #fff;
 }
-.in:hover {
+.two-person .in:hover {
   background-color: rgb(9, 224, 196);
 }
 /* footer part */
@@ -166,13 +169,17 @@ footer span {
 footer span:hover {
   background-color: rgb(9, 224, 196);
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:550px){
   body{
     background-color:#221D26;
   }
+  .background video {
+      height: 192px !important;
+  }
   .text h1{
     font-size:35px;
-    padding:20%;
+    padding-bottom:10%;
+    padding-top:20%;
   }
   .video-part{
     width:100%;
@@ -184,21 +191,24 @@ footer span:hover {
     size-adjust: 300px;
     display: none;
   }
-  .box1{
+  .background .box1{
     width:100%;
-    height:300px;
+    height:200px;
   }
-  .box1 h3{
+  .background .box1 h3{
+      font-size: 20px;
+  }
+  .background .box1 h3{
     position: relative;
-    top:30%;
+    top:1%;
   }
-  .box2{
+  .background .box2{
     width:100%;
-    height:300px;
+    height:200px;
   }
-  .box2 h3{
+  .background .box2 h3{
     position: relative;
-    top:45%;
+    top:25%;
   }
   .two-person{   
     width:100%;
@@ -206,10 +216,5 @@ footer span:hover {
   }
   .two-person p{
     padding-bottom:10px;
-  }
-}
-@media only screen and (max-width:300px){
-  body{
-    background-color:#221D26;
   }
 }
